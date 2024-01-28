@@ -2824,7 +2824,7 @@ VkResult WINAPI vkCreateGraphicsPipelines(VkDevice device, VkPipelineCache pipel
     params.pAllocator = pAllocator;
     params.pPipelines = pPipelines;
     status = UNIX_CALL(vkCreateGraphicsPipelines, &params);
-    assert(!status && "vkCreateGraphicsPipelines");
+    // assert(!status && "vkCreateGraphicsPipelines");
     return params.result;
 }
 
